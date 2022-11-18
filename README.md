@@ -1,10 +1,31 @@
 # Menudon
 
-Send toots from your menubar.
+![Screenshot](assets/screenshot.jpg)
 
-## Installation
+Send toots from your menubar. 🐘
 
-Coming soon
+## Setup
+
+Put your Mastodon credentials in `~/.config/menudon/config.json`:
+
+```json
+{
+  "instance": "https://mastodon.social",
+  "username": "yourusername",
+  "token": "yourtoken"
+}
+```
+
+You can get your token from the [Mastodon API](https://mastodon.social/settings/applications).
+
+Build and run the app:
+
+```bash
+$ npm install
+$ npm start
+```
+
+Somebody needs to package this up please.
 
 ## Usage
 
@@ -12,7 +33,7 @@ Open the menubar app and write a toot.
 
 ## Why?
 
-Lazyness and billionaires going bonkers on Twitter.
+Lazyness (and billionaires going berserk on Twitter).
 
 ## License
 

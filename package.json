@@ -1,0 +1,30 @@
+{
+  "name": "menudon",
+  "version": "0.1.0",
+  "description": "A macOS menubar client for Mastodon",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mre/menudon.git"
+  },
+  "keywords": [
+    "mastodon"
+  ],
+  "author": "Matthias Endler <matthias@endler.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mre/menudon/issues"
+  },
+  "homepage": "https://github.com/mre/menudon#readme",
+  "devDependencies": {
+    "electron": "^21.3.0"
+  },
+  "dependencies": {
+    "masto": "^4.6.3",
+    "menubar": "^9.2.3"
+  }
+}
