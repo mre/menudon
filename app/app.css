@@ -1,5 +1,19 @@
+:root {
+  --black: #282c37;
+  --blue: #595aff;
+}
+
 html {
-  font-family: "mastodon-social", sans-serif;
+  font-family: sans-serif;
+}
+
+#overlay {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  position: absolute;
+  display: none;
 }
 
 .compose-form {
@@ -50,7 +64,7 @@ html {
 }
 
 .button {
-  background-color: #595aff;
+  background-color: var(--blue);
   border: 10px;
   border-radius: 4px;
   box-sizing: border-box;

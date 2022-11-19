@@ -1,11 +1,28 @@
 const { login } = require("masto");
 const fs = require("fs");
 
+const showOverlay = (text) => {
+  document.getElementById("overlay").innerHTML = text;
+  document.getElementById("overlay").style.display = "block";
+};
+
+const configPath = `${process.env.HOME}/.config/menudon/config.json`;
+let config = null;
+
+// check if the config file exists
+if (!fs.existsSync(configPath)) {
+  // Show overlay
+  showOverlay(
+    `Please create a config.json file at ${configPath} and restart the app`
+  );
+}
+
 // read access token from file
-// ~/.config/mastodon/config.json
-const config = JSON.parse(
-  fs.readFileSync(`${process.env.HOME}/.config/menudon/config.json`, "utf8")
-);
+try {
+  config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+} catch (err) {
+  showOverlay(`Cannot parse config.json file: ${err}`);
+}
 
 // Open Mastodon in the default browser
 const openMastodon = () => {
