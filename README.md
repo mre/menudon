@@ -4,6 +4,10 @@
 
 Send toots from your menubar. 🐘
 
+## Installation
+
+Download the latest release from the [releases page](https://github.com/mre/menudon/releases).
+
 ## Setup
 
 Put your Mastodon credentials in `~/.config/menudon/config.json`:
@@ -18,18 +22,18 @@ Put your Mastodon credentials in `~/.config/menudon/config.json`:
 
 You can get your token from the [Mastodon API](https://mastodon.social/settings/applications).
 
+## Usage
+
+Open the menubar app and write a toot.
+
+## Development
+
 Build and run the app:
 
 ```bash
 $ npm install
 $ npm start
 ```
-
-Somebody needs to package this up please.
-
-## Usage
-
-Open the menubar app and write a toot.
 
 ## Packaging
 
