@@ -31,6 +31,12 @@ Somebody needs to package this up please.
 
 Open the menubar app and write a toot.
 
+## Packaging
+
+```bash
+$ npm run build
+```
+
 ## Why?
 
 Lazyness (and billionaires going berserk on Twitter).
