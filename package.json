@@ -1,11 +1,29 @@
 {
   "name": "menudon",
+  "build": {
+    "appId": "dev.endler.menudon",
+    "productName": "Menudon",
+    "mac": {
+      "category": "public.app-category.social-networking"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
+  },
   "version": "0.1.0",
   "description": "A macOS menubar client for Mastodon",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
   },
   "repository": {
     "type": "git",
@@ -21,7 +39,8 @@
   },
   "homepage": "https://github.com/mre/menudon#readme",
   "devDependencies": {
-    "electron": "^21.3.0"
+    "electron": "^21.3.0",
+    "electron-builder": "^23.6.0"
   },
   "dependencies": {
     "masto": "^4.6.3",

@@ -38,3 +38,5 @@ Lazyness (and billionaires going berserk on Twitter).
 ## License
 
 MIT
+
+App icon by [Iconduck](https://iconduck.com/icons/1891/mastodon).
