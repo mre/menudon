@@ -16,7 +16,7 @@
       "category": "Utility"
     }
   },
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A macOS menubar client for Mastodon",
   "main": "main.js",
   "scripts": {
