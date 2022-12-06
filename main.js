@@ -17,6 +17,7 @@ app.on("ready", () => {
   const mb = menubar({
     tray,
     dir: __dirname + "/app",
+    showDockIcon: false,
     browserWindow: {
       webPreferences: {
         nodeIntegration: true,
