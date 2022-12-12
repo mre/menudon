@@ -2,7 +2,7 @@
 
 ![Screenshot](assets/screenshot.jpg)
 
-Send toots from your menubar. 🐘
+Send toots from your menubar. Supports emoji. 🐘
 
 ## Installation
 
