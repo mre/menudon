@@ -44,7 +44,7 @@ const submit = async () => {
 
       await masto.statuses.create({
         status: status,
-        visibility: "direct",
+        visibility: "public",
       });
 
       // Clear the text area and hide the window

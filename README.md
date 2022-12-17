@@ -25,6 +25,7 @@ You can get your token from the [Mastodon API](https://mastodon.social/settings/
 ## Usage
 
 Open the menubar app and write a toot.
+Toots are public. There is no switch for changing the visibility yet.
 
 ## Development
 
