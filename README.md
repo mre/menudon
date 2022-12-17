@@ -1,6 +1,6 @@
 # Menudon
 
-![Screenshot](assets/screenshot.jpg)
+![Screenshot](assets/screenshot.png)
 
 Send toots from your menubar. Supports emoji. 🐘
 
