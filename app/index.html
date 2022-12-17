@@ -19,16 +19,20 @@
           ></textarea>
         </label>
         <div class="compose-form__publish">
-          <div class="compose-form__publish-button-wrapper">
-            <button
-              class="button button--block"
-              onclick="openMastodon()"
-              type="submit"
-            >
-              Open Mastodon
-            </button>
-            <button class="button button--block" type="submit">Publish!</button>
-          </div>
+          <select id="visibility-selector">
+            <option value="public">🌐</option>
+            <option value="unlisted">🔒</option>
+            <option value="private">🔐</option>
+            <option value="direct">📨</option>
+          </select>
+          <button
+            class="button button--block"
+            onclick="openMastodon()"
+            type="submit"
+          >
+            Open Mastodon
+          </button>
+          <button class="button button--block" type="submit">Publish!</button>
         </div>
       </div>
     </form>

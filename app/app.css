@@ -54,13 +54,7 @@ html {
 .compose-form__publish {
   display: flex;
   justify-content: flex-end;
-  min-width: 0;
-  flex: 0 0 auto;
-}
-
-.compose-form__publish-button-wrapper {
-  overflow: hidden;
-  padding-top: 15px;
+  gap: 4px;
 }
 
 .button {

@@ -42,9 +42,12 @@ const submit = async () => {
         accessToken: config.token,
       });
 
+      // Get visibility from the dropdown
+      const visibility = document.getElementById("visibility-selector").value;
+
       await masto.statuses.create({
-        status: status,
-        visibility: "public",
+        status,
+        visibility,
       });
 
       // Clear the text area and hide the window
