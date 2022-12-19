@@ -25,6 +25,9 @@ app.on("ready", () => {
     dir: __dirname + "/app",
     showDockIcon: false,
     browserWindow: {
+      transparent: true,
+      width: 295,
+      height: 320,
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,

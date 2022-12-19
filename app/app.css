@@ -7,6 +7,36 @@ html {
   font-family: sans-serif;
 }
 
+.myarrow {
+  position: relative;
+  padding: 12px 0;
+}
+
+.myarrow:before {
+  content: "";
+  height: 0;
+  width: 0;
+  border-width: 0 8px 12px 8px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page {
+  background: white;
+  width: 280px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.darwin.page {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 #overlay {
   background-color: var(--blue);
   color: #fff;
@@ -21,7 +51,7 @@ html {
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 310px;
+  height: 260px;
   padding-bottom: 71px;
   margin-bottom: -71px;
 }
@@ -46,9 +76,9 @@ html {
   padding-bottom: 10px;
   font-family: inherit;
   font-size: 14px;
-  resize: vertical;
   border: 0;
   outline: 0;
+  resize: none;
 }
 
 .compose-form__publish {

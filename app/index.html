@@ -3,39 +3,41 @@
   <head>
     <title>Menudon</title>
   </head>
-  <body>
-    <link rel="stylesheet" href="app.css" />
-    <div id="overlay"></div>
-    <form class="compose-form" action="javascript:submit()">
-      <div class="autosuggest-textarea">
-        <label
-          ><span style="display: none">What's on your mind?</span>
-          <textarea
-            maxlength="500"
-            id="autosuggest-textarea__textarea"
-            placeholder="What's on your mind?"
-            dir="auto"
-            aria-autocomplete="list"
-          ></textarea>
-        </label>
-        <div class="compose-form__publish">
-          <select id="visibility-selector">
-            <option value="public">🌐</option>
-            <option value="unlisted">🔒</option>
-            <option value="private">🔐</option>
-            <option value="direct">📨</option>
-          </select>
-          <button class="button button--block" type="submit">Publish!</button>
-          <button
-            class="button button--block"
-            onclick="openMastodon()"
-            type="submit"
-          >
-            Open Mastodon
-          </button>
+  <body class="myarrow">
+    <div class="page darwin">
+      <link rel="stylesheet" href="app.css" />
+      <div id="overlay"></div>
+      <form class="compose-form" action="javascript:submit()">
+        <div class="autosuggest-textarea">
+          <label
+            ><span style="display: none">What's on your mind?</span>
+            <textarea
+              maxlength="500"
+              id="autosuggest-textarea__textarea"
+              placeholder="What's on your mind?"
+              dir="auto"
+              aria-autocomplete="list"
+            ></textarea>
+          </label>
+          <div class="compose-form__publish">
+            <select id="visibility-selector">
+              <option value="public">🌐</option>
+              <option value="unlisted">🔒</option>
+              <option value="private">🔐</option>
+              <option value="direct">📨</option>
+            </select>
+            <button class="button button--block" type="submit">Publish!</button>
+            <button
+              class="button button--block"
+              onclick="openMastodon()"
+              type="submit"
+            >
+              Open Mastodon
+            </button>
+          </div>
         </div>
-      </div>
-    </form>
-    <script type="text/javascript" src="app.js"></script>
+      </form>
+      <script type="text/javascript" src="app.js"></script>
+    </div>
   </body>
 </html>
